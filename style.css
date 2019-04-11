@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body{
+    Dark-Blue: rgb(43, 56, 69);
+    Very-Dark-Blue: rgb(32, 44, 54);
+    Very-Dark-Blue: rgb(17, 21, 23);
+    Dark-Gray: rgb(132, 132, 132);
+    Very-Light-Gray: rgb(249, 249, 249);
+White: rgb(255, 255, 255);
+} */
+
+body{
+    color: white;
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    background: rgb(32, 44, 54);
+}
+.back-image{
+    position:absolute;
+    width: 100%;
+    z-index: -100;
+    top:0;
+    left: 0;
+}
+nav {
+    padding: 2rem 0;
+    background: rgb(43, 56, 69);
+}
+nav h1{
+	font-size: 1rem;
+}
+nav div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        margin: auto;
+}
+nav button{
+	border: none;
+	background: none;
+	color: white;
+}
+/*------------------------------*/
+.search-options {
+	margin: auto;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	justify-content: space-evenly;
+	height: 11rem;
+	padding: 0 1rem;
+}
+.search-box {
+	height: 3rem;
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	font-size: 1.5rem;
+    padding-left: 2rem;
+    background: rgb(43, 56, 69);
+}
+#search-input {
+	width: 100%;
+	border: none;
+	height: 100%;
+	margin-left: 1rem;
+	background: none;
+	color: white;
+}
+#continent-select{
+    background: rgb(43, 56, 69);
+    border: none;
+    width: 58%;
+    color: white;
+    height: 3rem;
+    border-radius: 5px;
+}
