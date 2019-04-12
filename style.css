@@ -30,6 +30,7 @@ body{
 nav {
     padding: 2rem 0;
     background: rgb(43, 56, 69);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.47);
 }
 nav h1{
 	font-size: 1rem;
@@ -66,6 +67,7 @@ nav button{
 	font-size: 1.5rem;
     padding-left: 2rem;
     background: rgb(43, 56, 69);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.47);
 }
 #search-input {
 	width: 100%;
@@ -73,13 +75,53 @@ nav button{
 	height: 100%;
 	margin-left: 1rem;
 	background: none;
-	color: white;
-}
-#continent-select{
-    background: rgb(43, 56, 69);
-    border: none;
-    width: 58%;
     color: white;
-    height: 3rem;
+
+}
+.custom-select {
+	background: rgb(43, 56, 69);
+	border: none;
+	width: 58%;
+	color: white;
+	height: 3rem;
+	border-radius: 5px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+    font-size: 0.8rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.47);
+}
+.custom-options {
+	position: absolute;
+	bottom: -9.5rem;
+	background: rgb(43, 56, 69);
+	width: 100%;
+	padding: 1rem 2rem;
+	list-style: none;
     border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.47);
+}
+/*--------------------------------*/
+.country-card {
+	height: 21rem;
+	width: 17rem;
+	margin: 1.5rem auto;
+	border-radius: 5px;
+	overflow: hidden;
+	background: url(https://restcountries.eu/data/col.svg);
+    background-color: rgb(43, 56, 69);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding-top: 12rem;
+    padding-left: 2rem;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.47);
+}
+.country-card h1{
+	margin-bottom: 1rem;
+}
+.country-card ul{
+    list-style: none;
 }
